@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>디자인 관점으로 콘텐츠를</title>
+<style>
+  :root { --bg:#fff; --fg:#111; --accent:#ffe000; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#111; --fg:#f5f5f5; --accent:#ffe000; } }
+  :root[data-theme="dark"] { --bg:#111; --fg:#f5f5f5; --accent:#ffe000; }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--fg); font-family: "Noto Serif KR", "Nanum Myeongjo", serif; }
+  .hero { text-align: center; padding: 96px 16px 120px; }
+  h1 { font-weight: 400; font-size: clamp(32px, 5vw, 56px); line-height: 1.4; }
+  .btn { display: inline-flex; align-items: center; gap: 12px; margin-top: 56px; padding: 18px 32px;
+         background: var(--accent); color: #111; border-radius: 999px; text-decoration: none;
+         font: 500 18px/1 "Pretendard", system-ui, sans-serif; }
+  .strip { display: flex; overflow-x: auto; height: 404px; }
+  .card { flex: 0 0 auto; width: 265px; height: 100%; }
+  .c1 { background: linear-gradient(#e9e6df 0 40%, #a3573f 40% 62%, #7d8a8c 62%); }
+  .c2 { background: repeating-linear-gradient(45deg, #ff3ea5 0 14px, #2ec96b 14px 28px, #2b6cff 28px 42px) , #fff; }
+  .c3 { background: linear-gradient(#8e9a95 0 35%, #7fa26e 35% 60%, #f3f0e8 60%); }
+  .c4 { background: radial-gradient(circle at 50% 60%, #d9ecf5 0 22%, transparent 23%), linear-gradient(#b5835a, #6b4a33); }
+  .c5 { background: linear-gradient(90deg, #2e7bd6 0 40%, #7c2d9b 40% 60%, #ff7a18 60%); }
+  .c6 { background: linear-gradient(#fff 0 15%, #c4324e 15% 22%, #fff 22% 60%, #111 60% 100%); }
+</style>
+</head>
+<body>
+  <section class="hero">
+    <h1>디자인 관점으로 콘텐츠를<br>기획하고 비즈니스와 연결합니다</h1>
+    <a class="btn" href="#">프로젝트 보기 <span aria-hidden="true">→</span></a>
+  </section>
+  <section class="strip" aria-label="프로젝트 이미지">
+    <div class="card c1"></div>
+    <div class="card c2"></div>
+    <div class="card c3"></div>
+    <div class="card c4"></div>
+    <div class="card c5"></div>
+    <div class="card c6"></div>
+  </section>
+</body>
+</html>

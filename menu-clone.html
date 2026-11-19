@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>메뉴 리스트</title>
+<style>
+  :root { --bg:#fff; --fg:#222; --tile:#f4f5f7; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#111; --fg:#eee; --tile:#222; } }
+  :root[data-theme="dark"] { --bg:#111; --fg:#eee; --tile:#222; }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--fg); font: 14px/1.2 system-ui, "Apple SD Gothic Neo", sans-serif; }
+  ul { list-style: none; display: flex; gap: 20px; overflow-x: auto; padding: 16px; }
+  li { display: flex; flex-direction: column; align-items: center; gap: 8px; flex: 0 0 auto; }
+  .icon { width: 48px; height: 48px; border-radius: 14px; background: var(--tile);
+          display: grid; place-items: center; font-size: 24px; }
+</style>
+</head>
+<body>
+  <ul>
+    <li><span class="icon">🧹</span>청소</li>
+    <li><span class="icon">🛋️</span>가구</li>
+    <li><span class="icon">🍚</span>음식</li>
+    <li><span class="icon">🏃</span>운동</li>
+    <li><span class="icon">⏰</span>시간</li>
+    <li><span class="icon">🎨</span>취미</li>
+  </ul>
+</body>
+</html>
